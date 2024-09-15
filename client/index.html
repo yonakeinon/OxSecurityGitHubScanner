@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub Repository Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>GitHub Repository Scanner</h1>
+
+    <div class="container">
+        <button class="fetch-button" id="fetchReposButton">Fetch Repositories</button>
+
+        <button class="fetch-button small-button" id="fetchAllReposDetailsButton">Fetch All Repository Details</button>
+
+        <div id="loading" class="loading" style="display:none;">Loading repositories...</div>
+        <div id="error"></div>
+
+        <div id="repoList">
+            <ul id="repos"></ul>
+        </div>
+
+        <div id="repoDetails" class="repo-details"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
